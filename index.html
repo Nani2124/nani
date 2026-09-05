@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarun Studios — Photography & Films</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div id="cursor-dot"></div>
+
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">Tarun <em>Studios</em></a>
+    <nav class="links">
+      <a href="#work">Work</a>
+      <a href="#packages">Packages</a>
+      <a href="#process">Process</a>
+      <a href="#signup" class="nav-cta">Enquire</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">Menu</button>
+  </div>
+</header>
+
+<div id="mobileMenu">
+  <div class="wrap">
+    <a href="#work">Work</a>
+    <a href="#packages">Packages</a>
+    <a href="#process">Process</a>
+    <a href="#signup">Enquire</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="fallback"></div>
+      <img src="/images/couple.jpeg" alt="Bride and groom silhouette" onerror="this.style.display='none'">
+    </div>
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Photography &amp; film, since 2017</span>
+      <h1><span class="hero-line">Moments worth</span><span class="hero-line line2">replaying</span></h1>
+      <p class="hero-copy">Tarun Studios shoots weddings, birthdays, pre-wedding stories and cover-song films — candid, considered, and delivered without the wait.</p>
+      <div class="hero-actions">
+        <a href="#packages" class="btn-primary">See the packages</a>
+        <a href="#work" class="btn-secondary">View our work</a>
+      </div>
+    </div>
+    <div class="scroll-cue"><span class="stick"></span>Scroll</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Weddings</span><span class="accent">/</span>
+      <span>Birthdays</span><span class="accent">/</span>
+      <span>Pre-Wedding</span><span class="accent">/</span>
+      <span>Cover Songs</span><span class="accent">/</span>
+      <span>Weddings</span><span class="accent">/</span>
+      <span>Birthdays</span><span class="accent">/</span>
+      <span>Pre-Wedding</span><span class="accent">/</span>
+      <span>Cover Songs</span><span class="accent">/</span>
+    </div>
+  </div>
+
+  <!-- WORK / GALLERY -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">Selected frames</span>
+          <h2>A studio for four kinds of days</h2>
+        </div>
+        <p>Weddings, birthdays, pre-wedding stories, and cover-song shoots — browse recent frames from each.</p>
+      </div>
+
+      <div class="filter-tabs" role="tablist">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="wedding">Weddings</button>
+        <button data-filter="birthday">Birthdays</button>
+        <button data-filter="prewedding">Pre-Wedding</button>
+        <button data-filter="coversong">Cover Songs</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="photo" data-cat="wedding"><img src="/images/couple2.jpeg" alt="Bride portrait" loading="lazy" onerror="this.style.display='none'"><span class="cap">Ritu &amp; Aman<em>Wedding</em></span></div>
+        <div class="photo" data-cat="birthday"><img src="/images/tarun.png" alt="Birthday party" loading="lazy" onerror="this.style.display='none'"><span class="cap">Turning five<em>Birthday</em></span></div>
+        <div class="photo" data-cat="prewedding"><img src="/images/bride.png" alt="Pre-wedding couple shoot" loading="lazy" onerror="this.style.display='none'"><span class="cap">Hillside story<em>Pre-Wedding</em></span></div>
+        <div class="photo" data-cat="wedding"><img src="/images/langa.jpeg" alt="Wedding ceremony" loading="lazy" onerror="this.style.display='none'"><span class="cap">Mandap ceremony<em>Wedding</em></span></div>
+        <div class="photo" data-cat="coversong"><img src="/images/white couple.jpeg" alt="Singer performing" loading="lazy" onerror="this.style.display='none'"><span class="cap">Studio session<em>Cover Song</em></span></div>
+        <div class="photo" data-cat="birthday"><img src="/images/potrait.jpeg" alt="Birthday cake cutting" loading="lazy" onerror="this.style.display='none'"><span class="cap">Cake moment<em>Birthday</em></span></div>
+        <div class="photo" data-cat="prewedding"><img src="/images/girl.jpeg" alt="Couple walking" loading="lazy" onerror="this.style.display='none'"><span class="cap">Golden hour<em>Pre-Wedding</em></span></div>
+        <div class="photo" data-cat="coversong"><img src="/images/gang.jpeg" alt="Music video shoot" loading="lazy" onerror="this.style.display='none'"><span class="cap">Rooftop shoot<em>Cover Song</em></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="section" id="packages" style="background:var(--bg-soft);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">Rates</span>
+          <h2>Packages</h2>
+        </div>
+        <p>Four starting packages, each built around a full day or full production. Every shoot can be customised.</p>
+      </div>
+
+      <div class="package-list">
+        <div class="package-row" style="--bg-img:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=60');">
+          <div>
+            <span class="package-tag">Full day</span>
+            <p class="package-name">Wedding</p>
+          </div>
+          <div class="package-desc">
+            <ul>
+              <li>Coverage across ceremonies, up to 10 hours</li>
+              <li>Candid + traditional photography, two shooters</li>
+              <li>Cinematic highlight film (4–6 minutes)</li>
+              <li>Drone coverage where permitted</li>
+              <li>Online gallery with 400+ edited photos</li>
+            </ul>
+          </div>
+          <div class="package-price">₹2,00,000<small>starting price</small></div>
+          <button class="select-btn" data-package="Wedding — ₹2,00,000">Select this package</button>
+        </div>
+
+        <div class="package-row" style="--bg-img:url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=60');">
+          <div>
+            <span class="package-tag">Half day</span>
+            <p class="package-name">Birthday</p>
+          </div>
+          <div class="package-desc">
+            <ul>
+              <li>4 hours of coverage, one shooter</li>
+              <li>Candid portraits and decor detail shots</li>
+              <li>Cake-cutting and guest coverage</li>
+              <li>Same-week reel-ready edit</li>
+              <li>Online gallery with 150+ edited photos</li>
+            </ul>
+          </div>
+          <div class="package-price">₹75,000<small>starting price</small></div>
+          <button class="select-btn" data-package="Birthday — ₹75,000">Select this package</button>
+        </div>
+
+        <div class="package-row" style="--bg-img:url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=60');">
+          <div>
+            <span class="package-tag">Location shoot</span>
+            <p class="package-name">Pre-Wedding</p>
+          </div>
+          <div class="package-desc">
+            <ul>
+              <li>Up to 2 locations, one full day</li>
+              <li>Two outfit changes, styling guidance included</li>
+              <li>Styled and candid portraits</li>
+              <li>60-second teaser film for social media</li>
+              <li>Online gallery with 200+ edited photos</li>
+            </ul>
+          </div>
+          <div class="package-price">₹1,00,000<small>starting price</small></div>
+          <button class="select-btn" data-package="Pre-Wedding Shoot — ₹1,00,000">Select this package</button>
+        </div>
+
+        <div class="package-row" style="--bg-img:url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=60');">
+          <div>
+            <span class="package-tag">Full production</span>
+            <p class="package-name">Cover Song</p>
+          </div>
+          <div class="package-desc">
+            <ul>
+              <li>Location scouting and styling coordination</li>
+              <li>Multi-camera shoot with audio sync</li>
+              <li>Full-length edited music video</li>
+              <li>Colour grading and sound mix</li>
+              <li>Delivered in vertical and widescreen cuts</li>
+            </ul>
+          </div>
+          <div class="package-price">₹1,25,000<small>starting price</small></div>
+          <button class="select-btn" data-package="Cover Song Shoot — ₹1,25,000">Select this package</button>
+        </div>
+      </div>
+      <p class="price-note">Prices are starting points for standard bookings within the city. Outstation shoots, extra hours and additional deliverables are quoted separately.</p>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section tight" id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">How it works</span>
+          <h2>Four steps to booking</h2>
+        </div>
+        <p>From first message to final delivery.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="num">01</span>
+          <h3>Enquire</h3>
+          <p>Send your date and package through the form below — we reply within a day.</p>
+        </div>
+        <div class="process-step">
+          <span class="num">02</span>
+          <h3>Meet & plan</h3>
+          <p>A short call or visit to lock the schedule, locations and shot list.</p>
+        </div>
+        <div class="process-step">
+          <span class="num">03</span>
+          <h3>Shoot day</h3>
+          <p>We show up on time, stay out of the way, and get the moments that matter.</p>
+        </div>
+        <div class="process-step">
+          <span class="num">04</span>
+          <h3>Get your films</h3>
+          <p>Edited photos and films land in your gallery within the promised window.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section tight" style="background:var(--bg-soft);">
+    <div class="wrap">
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <span class="mark">“</span>
+          <p>They disappeared into the background and somehow caught every moment we would've wanted to remember.</p>
+          <div class="who"><strong>Divya R.</strong> — Wedding, Chennai</div>
+        </div>
+        <div class="testimonial">
+          <span class="mark">“</span>
+          <p>Our pre-wedding film looked like something off a festival screen, not a template.</p>
+          <div class="who"><strong>Karthik &amp; Meera</strong> — Pre-Wedding shoot</div>
+        </div>
+        <div class="testimonial">
+          <span class="mark">“</span>
+          <p>Fast turnaround, and the birthday reel was cut and ready before the week was out.</p>
+          <div class="who"><strong>Anitha S.</strong> — Birthday shoot</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNUP -->
+  <section class="section" id="signup">
+    <div class="wrap signup-wrap">
+      <div class="signup-copy">
+        <h2>Tell us about your day</h2>
+        <p>Fill in a few details and we'll get back to you with dates, availability and a proper quote.</p>
+        <p class="contact-line"><strong>Call:</strong> +91 9573707996</p>
+        <p class="contact-line"><strong>Email:</strong> chenikalatarun@gmail.com</p>
+        <p class="contact-line"><strong>Studio:</strong> Chennai, Tamil Nadu</p>
+      </div>
+
+      <div id="formArea">
+        <form id="enquiry-form">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" required>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="field">
+              <label for="eventDate">Event date</label>
+              <input type="date" id="eventDate">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="packageSelect">Package</label>
+              <select id="packageSelect">
+                <option value="Wedding — ₹2,00,000">Wedding — ₹2,00,000</option>
+                <option value="Birthday — ₹75,000">Birthday — ₹75,000</option>
+                <option value="Pre-Wedding Shoot — ₹1,00,000">Pre-Wedding Shoot — ₹1,00,000</option>
+                <option value="Cover Song Shoot — ₹1,25,000">Cover Song Shoot — ₹1,25,000</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Where's the shoot?">
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Anything we should know</label>
+            <textarea id="message" placeholder="Guest count, locations, ideas you have in mind..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send enquiry</button>
+          <p class="form-note">We reply within 24 hours. No payment is needed to enquire.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-cta">Let's make something worth <em>watching</em></p>
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Tarun Studios. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#work">Work</a>
+        <a href="#packages">Packages</a>
+        <a href="#signup">Enquire</a>
+        <a href="https://instagram.com/tarunuu" target="_blank" rel="noreferrer" class="social-link" aria-label="Instagram">
+          <svg class="insta-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+            <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"></circle>
+          </svg>
+          tarunuu
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
